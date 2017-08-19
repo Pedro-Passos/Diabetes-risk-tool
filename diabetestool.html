@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang='en'>
+ <head>
+   <meta charset='utf-8'>
+   <title>JavaScript</title>
+   <link rel='stylesheet' type='text/css' href='diabetestool.css'>
+   <script src='diabetestool.js'></script>
+ </head>
+ <body>
+    <form action="#" method="post">
+		<fieldset>
+			<legend>Diabetes Risk Assessment Tool</legend>
+			<p>
+			<label class='sectionlabel'>How old are you?</label>
+			<label for="age1">1-25</label>
+			<input type="radio" class='elements' name='age' id='age1' value='0' checked="checked">
+			<label for="age2">26-40</label>
+			<input type="radio" class='elements' name='age' id='age2' value='5'>
+			<label for="age3">41-60</label>
+			<input type="radio" class='elements' name='age' id='age3' value='8'>
+			<label for="age4">60+</label>
+			<input type="radio" class='elements' name='age' id='age4' value='10'>
+			</p>
+			<p>
+			<label class='sectionlabel'>What is your BMI?</label>
+			<label for="bmi1">0-25</label>
+			<input type="radio" class='elements' name='bmi' id='bmi1' value='0' checked="checked">
+			<label for="bmi2">26-30</label>
+			<input type="radio" class='elements' name='bmi' id='bmi2' value='0'>
+			<label for="bmi3">31-35</label>
+			<input type="radio" class='elements' name='bmi' id='bmi3' value='9'>
+			<label for="bmi4">35+</label>
+			<input type="radio" class='elements' name='bmi' id='bmi4' value='10'>
+			</p>
+			<p>
+			<label class='sectionlabel'>Does anybody in your family have diabetes?</label>
+			<label for="relative1">No</label>
+			<input type="radio" class='elements' name='relative' id='relative1' value='0' checked="checked">
+			<label for="relative2">Grandparent</label>
+			<input type="radio" class='elements' name='relative' id='relative2' value='7'>
+			<label for="relative3">Sibling</label>
+			<input type="radio" class='elements' name='relative' id='relative3' value='15'>
+			<label for="relative4">Parent</label>
+			<input type="radio" class='elements' name='relative' id='relative4' value='15'>
+			</p>
+			<p>
+			<label class='sectionlabel'>How would you describe your diet?</label>
+			<label for="sugar1">Low sugar</label>
+			<input type="radio" class='elements' name='sugar' id='sugar1' value='0' checked="checked">
+			<label for="sugar2">Normal sugar</label>
+			<input type="radio" class='elements' name='sugar' id='sugar2' value='0'>
+			<label for="sugar3">Quite high sugar</label>
+			<input type="radio" class='elements' name='sugar' id='sugar3' value='7'>
+			<label for="sugar4">High sugar</label>
+			<input type="radio" class='elements' name='sugar' id='sugar4' value='10'>
+			</p>
+		</fieldset>
+		<br/>
+		 <fieldset>
+			<input type='submit' id="calculate" value='Calculate'>
+			<p id="message"></p>
+		</fieldset>
+   </form>
+ </body>
+</html>

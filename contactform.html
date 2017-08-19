@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>JavaScript</title>
+		<link rel='stylesheet' type='text/css' href='diabetestool.css'>
+		<script src='contactform.js'></script>
+	</head>
+	<body>
+		<p id="request">Please give us your feedback using the form below:</p>
+		<form id="contact" action="#" method="post">
+			<fieldset>
+				<legend>Please enter your details</legend>
+				<p>
+				<label for="title">Title: </label>
+				<select id="title">
+					<option value="x" selected="selected">Select Title</option>
+					<option value="Mr">Mr</option>
+					<option value="Ms">Ms</option>
+					<option value="Mrs">Mrs</option>
+					<option value="Miss">Miss</option>
+					<option value="Master">Master</option>
+				</select>
+				<span id="titleError" class="error"></span>
+				</p>
+				<p>
+				<label for="fname">First Name: </label>
+				<input type="text" id="fname"/>
+				<span id="fnameError" class="error"></span>
+				</p>
+				<p>
+				<label for="sname">Last Name: </label>
+				<input type="text" id="sname"/>
+				<span id="snameError" class="error"></span>
+				</p>
+				<p>
+				<label for="email">Email: </label>
+				<input type="text" id="email"/>
+				<span id="emailError" class="error"></span>
+				</p>
+				<p>
+				<label for="telNum">Telephone Number: </label>
+				<input type="text" id="telNum"/>
+				<span id="telError" class="error"></span>
+				</p>
+				<p>
+				<label for="zhaNum">Health Authority Number: </label>
+				<input type="text" id="zhaNum"/>
+				<span id="zhaError" class="error"></span>
+				</p>
+				<div class="questionmark" id="qmark"></div>
+				<div class="tooltip" id="ttip">If you do not know your ZHA number, please contact your GP</div>
+			</fieldset>
+			<fieldset>
+				<input type="button" id="btnsubmit" value="submit"/>
+			</fieldset>
+		</form>
+		 <p id="message">&nbsp;</p>
+	</body>
+</html>
